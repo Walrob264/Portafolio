@@ -1,0 +1,69 @@
+.Navbar {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.contain_Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-left: 1em;
+}
+.Logo {
+  cursor: pointer;
+}
+.contain_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  padding-right: 1em;
+}
+.bx-menu-alt-right {
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 467px) {
+  .Navbar {
+    height: 50px;
+    justify-content: space-between;
+  }
+  .MenuforDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-right: 0.5em;
+  }
+  .menuItem__Desktop {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .Contanct__Desktop {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+@media (min-width: 700px) {
+  .MenuforDesktop {
+    display: flex;
+    z-index: 99999;
+
+    justify-content: space-between;
+    gap: 2em;
+    padding-right: 3.5em;
+  }
+  .Contanct__Desktop {
+    color: #ffff;
+    text-decoration: none;
+    background: #5221e6;
+    padding: 1em;
+  }
+}

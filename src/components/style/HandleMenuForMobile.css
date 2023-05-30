@@ -1,0 +1,43 @@
+.Menu {
+  width: 100%;
+  height: 100%;
+  background-color: #181823;
+  display: flex;
+  flex-direction: column;
+}
+.bx-x {
+  color: #ffff;
+  font-size: 2em;
+}
+
+.containt_bx-x {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em;
+}
+.containt_Menu_Items {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 3em;
+}
+.Menu_Items {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  row-gap: 1.5em;
+  column-gap: 1.5em;
+  align-items: center;
+}
+.menu_Item {
+  color: #ffff;
+  text-decoration: none;
+}
+.Contanct_Mobile {
+  color: #ffff;
+  text-decoration: none;
+}

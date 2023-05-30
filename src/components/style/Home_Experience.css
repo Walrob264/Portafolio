@@ -1,0 +1,71 @@
+.photo {
+  width: 100%;
+  height: 40vh;
+  background-image: url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80");
+  background-position: center;
+  max-width: 600px;
+  background-size: cover;
+  display: flex;
+  margin: auto;
+  border-radius: 1.5em;
+}
+.Containt__Title {
+  width: 100%;
+  height: 30vh;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding-left: 0.5em;
+  text-align: center;
+}
+.Span__Title {
+  color: #ffffff50;
+}
+.Containt__P {
+  height: 30%;
+  font-size: 1.7rem;
+  color: #ffffff;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+}
+@media (min-width: 1240px) {
+  .ME {
+    background-color: black;
+  }
+  .photo {
+    position: absolute;
+    width: 800px;
+    height: 650px;
+    left: 3em;
+    top: 125px;
+    border-radius: 1em;
+    z-index: 999;
+  }
+  .Containt__text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: #181823;
+  }
+  .Containt__Title {
+    width: 50%;
+    height: 40%;
+    font-size: 3rem;
+    padding-top: 15%;
+    background-color: #181823;
+  }
+  .Containt__P {
+    width: 50%;
+    height: 10%;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 8em;
+  }
+}
