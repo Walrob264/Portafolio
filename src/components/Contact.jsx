@@ -1,9 +1,10 @@
 import { useForm } from "react-hook-form";
 import "./style/Contact.css";
 const Contact = () => {
-  const { handleSubmit, register } = useForm();
+  const { handleSubmit, register, reset } = useForm();
   const submit = (data) => {
     console.log(data);
+    reset();
   };
   return (
     <section id="Contact" className="contact">
