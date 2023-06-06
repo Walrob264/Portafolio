@@ -4,16 +4,19 @@ import { useState } from "react";
 import UseViewport from "./hooks/UseViewport";
 import MobileMenu from "./components/MobileMenu";
 import Home_Experience from "./components/Home_Experience";
+import Work from "./components/Work";
+import WorkForDesktop from "./components/WorkForDesktop";
+import Contact from "./components/Contact";
 function App() {
   const [menu, setMenu] = useState();
   const HandleMenu = () => {
-    console.log("me estas dando click para abri el menu");
-    console.log(menu);
     setMenu(!menu);
   };
   const HandleLinks = () => {
     setMenu(!menu);
-    console.log("quieres ir a donde dice");
+  };
+  const HandleClick = (url) => {
+    window.open(url);
   };
   const { width, isMobile } = UseViewport();
 
@@ -31,6 +34,13 @@ function App() {
           />
         )}
         <Home_Experience />
+
+        {isMobile ? (
+          <Work HandleClick={HandleClick} />
+        ) : (
+          <WorkForDesktop HandleClick={HandleClick} />
+        )}
+        <Contact />
       </div>
     </>
   );

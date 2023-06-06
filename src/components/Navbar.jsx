@@ -1,14 +1,27 @@
+import { useEffect, useState } from "react";
 import UseViewport from "../hooks/UseViewport";
 import "./style/Navbar.css";
 
 const Navbar = ({ HandleMenu, HandleLinks }) => {
+  const [navbarScrol, setsNabvarScroll] = useState(false);
   const { isMobile } = UseViewport();
 
+  const changeNavbarScroll = () => {
+    if (window.scrollY > 10) {
+      setsNabvarScroll(true);
+    } else {
+      setsNabvarScroll(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarScroll);
+
   return (
-    <div className="Navbar">
+    <div className={navbarScrol ? "navbarActiveScroll" : "Navbar"}>
       <div className="contain_Logo">
-        <h1 className="Logo">
-          <a href="#Me">Walter.M</a>
+        <h1>
+          <a className="Logo" href="#Me">
+            Walter.M
+          </a>
         </h1>
       </div>
       {!isMobile && (

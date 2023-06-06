@@ -1,0 +1,128 @@
+.contact {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+.contact_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  padding: 1em;
+}
+.text__for__contact {
+  color: white;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+.p_for_contact {
+  font-size: 1rem;
+  padding-top: 1em;
+  color: #8491a0;
+}
+.form_contact {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+.email_for_contact,
+.name_for_contact,
+.message_for_contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.3em 1em;
+  gap: 1em;
+  font-size: 1rem;
+}
+.input_Name-contact,
+.input_Email-contact,
+.input_Message-contact {
+  background-color: #181823;
+  padding: 1em;
+  color: white;
+  text-align: start;
+  font-size: 1.2rem;
+}
+.input_Message-contact {
+  height: 30vh;
+}
+.button_Form {
+  background-color: #5221e6;
+  color: white;
+  width: 90%;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+@media (min-width: 900px) {
+  .contact_container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text__for__contact {
+    font-size: 2.2rem;
+    position: absolute;
+    width: 60%;
+    text-align: start;
+    right: 60px;
+    padding: 0;
+    top: 10px;
+  }
+  .email_for_contact,
+  .name_for_contact,
+  .message_for_contact {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 0.5em 1em;
+    gap: 1em;
+  }
+  .form_contact {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 50%;
+    gap: 1em;
+  }
+
+  .input_Name-contact,
+  .input_Email-contact,
+  .input_Message-contact {
+    background-color: #181823;
+    color: white;
+    text-align: start;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .text_container {
+    width: 50%;
+    height: 60%;
+    position: relative;
+  }
+  .button_Form {
+    width: 66%;
+    margin-left: 26px;
+    padding: 2em;
+    font-size: 1.2rem;
+  }
+  .input_Message-contact {
+    height: 15vh;
+  }
+  .p_for_contact {
+    font-size: 1.2rem;
+  }
+}

@@ -1,12 +1,11 @@
 .app {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   min-width: 300px;
 }
 
 .ME {
-  width: 100vw;
-  height: 100vh;
-  background-color: #181823;
   min-width: 300px;
+  position: relative;
+  background: black;
 }

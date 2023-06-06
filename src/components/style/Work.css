@@ -1,0 +1,162 @@
+.containt__works {
+  background-color: black;
+  gap: 1.5em;
+  display: grid;
+  justify-items: center;
+}
+.Containt_text {
+  width: 100%;
+}
+.Title {
+  padding-left: 0.5em;
+  color: #8491a0;
+}
+.Text__for__work {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 0.5em;
+  color: white;
+}
+.Contain__works {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  justify-content: center;
+}
+.works {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  min-height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  overflow: auto;
+}
+.image__work,
+.image__work-galleta,
+.image__work-wheater,
+.image__work-rickandmorty {
+  background-image: url("/Ecomerce.png");
+  background-position: center;
+  background-size: 100%;
+  height: 100%;
+}
+.Texts__work {
+  height: 100%;
+  background-color: #181823;
+}
+.Name__work {
+  font-size: 1.5rem;
+  padding-left: 0.5em;
+  color: white;
+  font-weight: 700;
+  padding-top: 1em;
+  cursor: pointer;
+  display: block;
+  width: 270px;
+}
+.Text__work {
+  color: #8491a0;
+  font-size: 1.3rem;
+  padding: 1em;
+}
+.image__work-galleta {
+  background-image: url("/galleta_de_la_fortuna.png");
+}
+.image__work-wheater {
+  background-image: url("/wheater_app.png");
+}
+.image__work-rickandmorty {
+  background-image: url("/rickandmorty.png");
+}
+
+.Name__work:hover {
+  color: #5221e6;
+  transition: 0.5s;
+  font-size: 2rem;
+  width: 500px;
+}
+@media (min-width: 700px) {
+  .image__work,
+  .image__work-galleta,
+  .image__work-wheater,
+  .image__work-rickandmorty {
+    background-position: center;
+    background-size: 160%;
+    height: 80%;
+  }
+  .containt__works {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 700px);
+    justify-items: stretch;
+    align-items: stretch;
+    padding: 3em;
+  }
+  .Title {
+    font-size: 1.2rem;
+  }
+  .Containt_text {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: stretch;
+  }
+  .Text__for__work {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .works {
+    align-items: stretch;
+    height: 930px;
+    justify-content: stretch;
+    max-width: none;
+    min-height: 500px;
+  }
+  .works:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+  }
+  .works:nth-child(3) {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    justify-self: center;
+  }
+  .works:nth-child(5) {
+    grid-row: 2/4;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+  .works:nth-child(4) {
+    grid-row: 2/4;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: end;
+  }
+}
+@media (min-width: 1000px) {
+  .image__work,
+  .image__work-galleta,
+  .image__work-wheater,
+  .image__work-rickandmorty {
+    background-position: center;
+    background-size: 110%;
+    height: 80%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .image__work,
+  .image__work-galleta,
+  .image__work-wheater,
+  .image__work-rickandmorty {
+    height: 170%;
+    background-size: 100%;
+  }
+}

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./style/HandleMenuForMobile.css";
 
 const MobileMenu = ({ menu, isMobile, HandleMenu, HandleLinks }) => {
