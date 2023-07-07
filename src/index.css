@@ -11,6 +11,13 @@ a {
 body {
   margin: 0;
 }
+body::-webkit-scrollbar {
+  background-color: black;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(79, 173, 79, 0.815);
+  border-radius: 7px;
+}
 h1,
 h2,
 h3,
