@@ -1,26 +1,73 @@
 import { useForm } from "react-hook-form";
 import "./style/Contact.css";
+import enviarCorreo from "../hooks/sendGmail";
+import { useState } from "react";
 const Contact = () => {
+  const [emailsent, SetEmailsent] = useState();
+  const [errorEmailSent, setErrorEmailSent] = useState();
   const { handleSubmit, register, reset } = useForm();
   const submit = (data) => {
-    console.log(data);
+    const formulario = {
+      name: data.name,
+      email: data.email,
+      message: data.message,
+    };
+
+    if (enviarCorreo(formulario)) {
+      SetEmailsent(true);
+      setErrorEmailSent(false);
+    } else {
+      SetEmailsent(false);
+      setErrorEmailSent(true);
+    }
     reset();
+  };
+  const handleButtoClose = () => {
+    SetEmailsent(false);
+    setErrorEmailSent(false);
+  };
+  const handleInvalid = (data) => {
+    setErrorEmailSent(true);
   };
   return (
     <section id="Contact" className="contact">
+      {emailsent && (
+        <div className="alert_sent-email">
+          <h1>Tu correo fue enviado exitosamente</h1>
+          <i className="bx bx-check-circle"></i>
+          <button className="button_close" onClick={handleButtoClose}>
+            cerrar
+          </button>
+        </div>
+      )}
+      {errorEmailSent && (
+        <div className="alert_sentError-email">
+          <h1>
+            Hay un problema con enviar tu correo. Por favor, vuelve a intentarlo
+            (Todos los campos son requeridos)
+          </h1>
+
+          <button className="button_close" onClick={handleButtoClose}>
+            cerrar
+          </button>
+        </div>
+      )}
       <div className="contact_container">
         <div className="text_container">
           <div className="text__for__contact">
-            <h1> Let’s talk business</h1>
+            <h1> Hablemos de negocios</h1>
             <p className="p_for_contact">
-              Now that you know a lot about me, let me know if you are
-              interested to work with me.
+              Ahora que sabes mucho de mí, avísame si eres interesado en
+              trabajar conmigo.
             </p>
           </div>
         </div>
-        <form className="form_contact" onSubmit={handleSubmit(submit)}>
+        <form
+          className="form_contact"
+          onSubmit={handleSubmit(submit, handleInvalid)}
+        >
           <div className="name_for_contact">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Nombre</label>
             <input
               {...register("name", { required: true })}
               id="name"
@@ -33,12 +80,12 @@ const Contact = () => {
             <input
               className="input_Email-contact"
               {...register("email", { required: true })}
-              id="model"
-              type="text"
+              id="email"
+              type="email"
             />
           </div>
           <div className="message_for_contact">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Mensaje</label>
             <textarea
               className="input_Message-contact"
               {...register("message", { required: true })}
@@ -46,7 +93,7 @@ const Contact = () => {
               type="text"
             />
           </div>
-          <button className="button_Form">LET’S GET STARTED</button>
+          <button className="button_Form">Empecemos</button>
         </form>
       </div>
     </section>

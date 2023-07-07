@@ -44,18 +44,18 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#About" className="footer_links">
-              About
-            </a>
-          </li>
-          <li>
             <a href="#Works" className="footer_links">
               Works
             </a>
           </li>
           <li>
-            <a href="#Process" className="footer_links">
-              Process
+            <a href="#Stack" className="footer_links">
+              Stack
+            </a>
+          </li>
+          <li>
+            <a href="#Contact" className="footer_links">
+              Contact
             </a>
           </li>
         </ul>

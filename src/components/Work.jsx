@@ -84,6 +84,23 @@ const Work = ({ HandleClick }) => {
             </p>
           </div>
         </div>
+        <div className="works ">
+          <div className="image__work-ecomerceAcademlo"></div>
+          <div className="Texts__work">
+            <h2
+              className="Name__work"
+              onClick={() =>
+                HandleClick("https://rickandmorty-walter.netlify.app")
+              }
+            >
+              Ecomerce Academlo React
+            </h2>
+            <p className="Text__work">
+              En esta aplicacion es un ecomerce consumiendo api, realizando todo
+              lo que puede hacer un ecomrce, con rutas protegidas, login, etc...
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

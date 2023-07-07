@@ -3,7 +3,7 @@ import "./style/Work.css";
 const Work = ({ HandleClick }) => {
   const [indexImg, setIndexImg] = useState(0);
   const styleMovible = {
-    transform: `translateX(calc((-${indexImg} / 2) * 100%))`,
+    transform: `translateX(calc((-${indexImg} / 5) * 100%))`,
   };
   const handlePrevious = () => {
     if (indexImg - 1 >= 0) {
@@ -12,7 +12,7 @@ const Work = ({ HandleClick }) => {
   };
 
   const handleNext = () => {
-    if (indexImg + 1 <= 1) {
+    if (indexImg + 1 <= 2) {
       setIndexImg(indexImg + 1);
     } else {
       setIndexImg(0);
@@ -101,6 +101,24 @@ const Work = ({ HandleClick }) => {
                 En esta aplicacion se consume un API de los personajes de Rick
                 and Morty, mostrando su información, y podiendo categorizar por
                 localización dichos personajes
+              </p>
+            </div>
+          </div>
+          <div className="works ecomerce_react">
+            <div className="image__work-ecomerceAcademlo"></div>
+            <div className="Texts__work">
+              <h2
+                className="Name__work"
+                onClick={() =>
+                  HandleClick("https://rickandmorty-walter.netlify.app")
+                }
+              >
+                Ecomerce Academlo React
+              </h2>
+              <p className="Text__work">
+                En esta aplicacion es un ecomerce consumiendo api, realizando
+                todo lo que puede hacer un ecomrce, con rutas protegidas, login,
+                etc...
               </p>
             </div>
           </div>

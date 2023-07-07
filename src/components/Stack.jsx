@@ -17,7 +17,7 @@ const Stack = () => {
         </div>
         <div className="containt-css">
           <i>
-            <i class="bx bxl-css3"></i>
+            <i className="bx bxl-css3"></i>
           </i>
           CSS
         </div>
