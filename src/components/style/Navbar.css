@@ -1,27 +1,36 @@
 .Navbar {
-  width: 100%;
+  width: 40%;
+  min-width: 600px;
   height: 70px;
-  background-color: black;
   display: flex;
   justify-content: space-between;
-  transition: 1.5s;
+
+  border-radius: 1.5em;
+  position: fixed;
+
+  visibility: hidden;
 }
 .navbarActiveScroll {
   position: fixed;
-  top: 0;
-  width: 100%;
+  bottom: 15px;
+  width: 89%;
+  max-width: 600px;
+  left: 7%;
   height: 80px;
   display: flex;
   justify-content: space-between;
-  background-color: black;
   z-index: 99999;
   transition: 0.5s;
+  border-radius: 1.5em;
+  transition: all 0.5s;
+  background-color: rgb(19, 66, 19);
+  visibility: visible;
 }
 .contain_Logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #181823;
   padding-left: 1em;
 }
 .Logo {
@@ -37,26 +46,26 @@
 }
 .bx-menu-alt-right {
   font-size: 2em;
-  color: white;
+  color: #181823;
   cursor: pointer;
 }
 .menuItem__Desktop:hover {
-  color: #5221e6;
+  color: #09ff46;
   transition: 0.5s;
 }
 .Contanct__Desktop:hover {
-  color: black;
+  color: #09ff46;
   text-decoration: none;
   transition: 0.5s;
 }
 .Logo:hover {
-  color: #5221e6;
+  color: #09ff46;
   transition: 0.5s;
 }
 
 @media (min-width: 467px) {
   .Navbar {
-    height: 50px;
+    height: 70px;
     justify-content: space-between;
   }
   .MenuforDesktop {
@@ -91,7 +100,10 @@
   .Contanct__Desktop {
     color: #ffff;
     text-decoration: none;
-    background: #5221e6;
+    background: #181823;
     padding: 1.5em;
+  }
+  .navbarActiveScroll {
+    left: 35%;
   }
 }

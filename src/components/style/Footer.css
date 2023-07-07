@@ -1,0 +1,73 @@
+.footer {
+  background-color: #181823;
+  height: 500px;
+  width: 100%;
+}
+.containt_logo {
+  height: 20%;
+  display: flex;
+  align-items: start;
+  padding-top: 1em;
+  padding-left: 0.4em;
+  gap: 0.5em;
+  font-size: 2rem;
+  font-weight: 200;
+  color: white;
+  flex-direction: column;
+}
+.containt_icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  font-size: 1.7rem;
+  padding-left: 0.4em;
+}
+.bxl-twitter {
+  color: #26a7de;
+}
+.bxl-facebook-square {
+  color: rgb(23, 71, 143);
+}
+.bxl-linkedin-square {
+  color: #0077b5;
+}
+.containt_seccions-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-top: 1.5em;
+  padding-left: 0.5em;
+  justify-content: center;
+  padding-top: 3em;
+}
+.containt_seccions-pages > li > a:hover {
+  color: #09ff46;
+  transition: 0.5s;
+}
+.logo:hover {
+  color: #09ff46;
+  transition: 0.5s;
+}
+@media (min-width: 900px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .containt_logo {
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: start;
+    padding-left: 1.5em;
+    padding-top: 2em;
+  }
+  .containt_seccions-pages {
+    width: 40%;
+    height: 100%;
+    font-size: 1rem;
+    justify-content: center;
+    padding-bottom: 6em;
+    gap: 3.5em;
+  }
+}

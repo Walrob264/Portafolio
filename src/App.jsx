@@ -7,6 +7,8 @@ import Home_Experience from "./components/Home_Experience";
 import Work from "./components/Work";
 import WorkForDesktop from "./components/WorkForDesktop";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Stack from "./components/Stack";
 function App() {
   const [menu, setMenu] = useState();
   const HandleMenu = () => {
@@ -18,7 +20,7 @@ function App() {
   const HandleClick = (url) => {
     window.open(url);
   };
-  const { width, isMobile } = UseViewport();
+  const { isMobile } = UseViewport();
 
   return (
     <>
@@ -40,7 +42,9 @@ function App() {
         ) : (
           <WorkForDesktop HandleClick={HandleClick} />
         )}
+        <Stack />
         <Contact />
+        <Footer />
       </div>
     </>
   );

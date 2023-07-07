@@ -12,7 +12,12 @@ const MobileMenu = ({ menu, isMobile, HandleMenu, HandleLinks }) => {
         <div className="containt_Menu_Items">
           <ul className="Menu_Items">
             <li>
-              <a href="#Me" className="menu_Item" onClick={HandleLinks}>
+              <a
+                className="menu_Item"
+                href="https://www.linkedin.com/in/walter-medina-berrios-90008627b/"
+                target="_blank"
+                onClick={HandleLinks}
+              >
                 Experience
               </a>
             </li>
@@ -22,12 +27,8 @@ const MobileMenu = ({ menu, isMobile, HandleMenu, HandleLinks }) => {
               </a>
             </li>
             <li>
-              <a
-                href="#Photography"
-                className="menu_Item"
-                onClick={HandleLinks}
-              >
-                Photography
+              <a href="#Stack" className="menu_Item" onClick={HandleLinks}>
+                Stack
               </a>
             </li>
             <li>

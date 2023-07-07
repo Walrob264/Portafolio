@@ -27,7 +27,12 @@ const Navbar = ({ HandleMenu, HandleLinks }) => {
       {!isMobile && (
         <ul className="MenuforDesktop">
           <li>
-            <a href="#Me" className="menuItem__Desktop" onClick={HandleLinks}>
+            <a
+              href="https://www.linkedin.com/in/walter-medina-berrios-90008627b/"
+              target="_blank"
+              className="menuItem__Desktop"
+              onClick={HandleLinks}
+            >
               Experience
             </a>
           </li>
@@ -37,16 +42,16 @@ const Navbar = ({ HandleMenu, HandleLinks }) => {
               className="menuItem__Desktop"
               onClick={HandleLinks}
             >
-              Work
+              Works
             </a>
           </li>
           <li>
             <a
-              href="#Photography"
+              href="#Stack"
               className="menuItem__Desktop"
               onClick={HandleLinks}
             >
-              Photography
+              Stack
             </a>
           </li>
           <li>
