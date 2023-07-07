@@ -50,9 +50,9 @@ const Home_Experience = () => {
           </div>
           <div className="Containt__P">
             <p>
-              Probablemente soy el diseñador más apasionado al que jamás
-              llegarás trabajar con. Si tienes un gran proyecto que necesita
-              algo increíble habilidades, soy tu chico.
+              Soy una persona curiosa, siempre abierto a nuevas tecnologias, se
+              me da bien trabajar en equipo. Si tienes un gran proyecto que
+              necesita algo increíble, estoy para ayudarle.
             </p>
           </div>
         </div>
