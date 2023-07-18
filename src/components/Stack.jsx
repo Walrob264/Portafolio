@@ -3,7 +3,6 @@ import "./style/Stack.css";
 const Stack = () => {
   return (
     <section id="Stack" className="stack_section">
-      <h1>My stacks</h1>
       <div className="stacks-containts">
         <div className="containt-javascript">
           <i className="bx bxl-javascript"></i>
@@ -20,6 +19,13 @@ const Stack = () => {
             <i className="bx bxl-css3"></i>
           </i>
           CSS
+        </div>
+        <h1 className="title">My stacks</h1>
+        <div className="containt-git">
+          <i>
+            <i className="bx bxl-github"></i>
+          </i>
+          GitHub
         </div>
       </div>
     </section>

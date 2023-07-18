@@ -64,6 +64,7 @@
 .button_Form:hover {
   scale: 1.1;
   color: rgb(82, 230, 82);
+  transition: all 0.5s;
 }
 .alert_sent-email,
 .alert_sentError-email {
@@ -166,10 +167,12 @@
     position: relative;
   }
   .button_Form {
-    width: 66%;
+    width: 50%;
     margin-left: 26px;
-    padding: 2em;
+    padding: 1.2em;
     font-size: 1.2rem;
+    justify-content: center;
+    margin-left: 10%;
   }
   .input_Message-contact {
     height: 15vh;
