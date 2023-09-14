@@ -98,6 +98,9 @@
   gap: 1em;
   flex-direction: column;
 }
+.slider_btn {
+ display: none;
+}
 @media (min-width: 700px) {
   .page_work {
     width: 100%;
@@ -126,6 +129,7 @@
     align-items: start;
   }
   .slider_btn {
+    display: block;
     width: 1.5em;
     aspect-ratio: 1;
     border-radius: 50%;

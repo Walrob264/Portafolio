@@ -5,6 +5,11 @@
   height: 100vh;
   overflow: hidden;
 }
+@media (max-height: 870px) {
+  .ME{
+  height: 100%;
+}
+}
 .card_presetantion {
   width: 80%;
   height: 64%;
@@ -175,15 +180,15 @@
     align-self: flex-end;
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-right: -200px;
-    margin-bottom: 20px;
+    margin-right: -9%;
+    margin-bottom: 0%;
     cursor: pointer;
     position: relative;
     right: 38%;
     bottom: 35%;
     animation: transtion-left infinite 8s;
     animation-play-state: running;
-    transform: rotate3d(0, 0, 1, -55deg);
+    transform: rotate3d(0, 0, 1, -59deg);
   }
   .experience_home:hover {
     background-color: #181823;
@@ -203,14 +208,14 @@
     align-self: flex-end;
     grid-column: 3/4;
     grid-row: 1/2;
-    margin-left: -200px;
-    margin-bottom: 20px;
+    margin-left: -8%;
+    margin-bottom: -0%;
     cursor: pointer;
     position: relative;
     right: -12%;
     bottom: 35%;
     animation: transtion-right infinite 8s;
-    transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 55deg);
   }
   .work_home:hover {
     background-color: #181823;
@@ -230,8 +235,8 @@
     align-self: flex-start;
     grid-column: 3/4;
     grid-row: 2/3;
-    margin-left: -200px;
-    margin-bottom: 20px;
+    margin-left: -8%;
+    margin-bottom: 0%;
     cursor: pointer;
     position: relative;
     right: -12%;
@@ -257,14 +262,14 @@
     align-self: flex-start;
     grid-column: 1/2;
     grid-row: 2/3;
-    margin-right: -200px;
-    margin-bottom: 20px;
+    margin-right: -13%;
+    margin-bottom: 0%;
     cursor: pointer;
     position: relative;
     right: 12%;
     bottom: -35%;
     animation: transtion-left-down infinite 8s;
-    transform: rotate3d(0, 0, 1, -129deg);
+    transform: rotate3d(0, 0, 1, -125deg);
   }
   .contact_home:hover {
     background-color: #181823;
@@ -272,93 +277,7 @@
     color: white;
     animation-play-state: paused;
   }
-  @keyframes transtion-left {
-    0% {
-      background-color: #181823;
-      color: white;
-      right: 10%;
-      bottom: 35%;
-    }
-    50% {
-      background-color: rgba(79, 173, 79, 0.815);
-      color: white;
-      right: 2.5%;
-      bottom: 50%;
-      transform: rotate3d(0, 0, 1, -40deg);
-    }
-
-    100% {
-      background-color: #181823;
-      color: white;
-      right: 10%;
-      bottom: 35%;
-    }
-  }
-  @keyframes transtion-left-down {
-    0% {
-      background-color: #181823;
-      color: white;
-      right: 10%;
-      bottom: -35%;
-    }
-    50% {
-      background-color: rgba(79, 173, 79, 0.815);
-      color: white;
-      right: 2.5%;
-      bottom: -45%;
-      transform: rotate3d(0, 0, 1, -140deg);
-    }
-
-    100% {
-      background-color: #181823;
-      color: white;
-      right: 10%;
-      bottom: -35%;
-    }
-  }
-  @keyframes transtion-right {
-    0% {
-      background-color: rgba(79, 173, 79, 0.815);
-      color: white;
-      right: -10%;
-      bottom: 35%;
-    }
-    50% {
-      background-color: #181823;
-      color: white;
-      right: -5%;
-      bottom: 45%;
-      transform: rotate3d(0, 0, 1, 42deg);
-    }
-
-    100% {
-      background-color: rgba(79, 173, 79, 0.815);
-      color: white;
-      right: -10%;
-      bottom: 35%;
-    }
-  }
-  @keyframes transtion-right-down {
-    0% {
-      background-color: rgba(79, 173, 79, 0.815);
-      color: white;
-      right: -15%;
-      bottom: -45%;
-    }
-    50% {
-      background-color: #181823;
-      color: white;
-      right: -4%;
-      bottom: -65%;
-      transform: rotate3d(0, 0, 1, 138deg);
-    }
-    100% {
-      background-color: rgba(79, 173, 79, 0.815);
-      color: white;
-      right: -15%;
-      bottom: -45%;
-    }
-  }
+ 
   .Containt__Title {
     margin-top: 2em;
     height: 200px;
@@ -370,5 +289,266 @@
     padding-top: 0;
     width: 60%;
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 800px){
+  .experience_home{
+    margin-right: 1%;
+    margin-bottom: -5%;
+    transform: rotate3d(0, 0, 1, -61deg);
+  }
+  .work_home{
+    margin-left: 2%;
+    margin-bottom: -5%;
+    transform: rotate3d(0, 0, 1, 61deg);
+  }
+  .lenguaje_home{
+    margin-left: -3%;
+  }
+  .contact_home{
+    margin-right: -8%;
+    transform: rotate3d(0, 0, 1, -135deg);
+  }
+  }
+
+  @media (min-width: 1000px){
+    .experience_home{
+      margin-right: -18%;
+    }
+    .work_home{
+      margin-left: -18%;
+    }
+    .lenguaje_home{
+      margin-left: -23%;
+      transform: rotate3d(0, 0, 1, 123deg);
+    }
+    .contact_home{
+      margin-right: -25%;
+      transform: rotate3d(0, 0, 1, -130deg);
+    }
+    }
+
+
+  @media (min-width: 1200px){
+    .experience_home{
+      margin-right: -18%;
+    }
+    .work_home{
+      margin-left: -18%;
+    }
+    .lenguaje_home{
+      margin-left: -23%;
+      transform: rotate3d(0, 0, 1, 123deg);
+    }
+    .contact_home{
+      margin-right: -25%;
+      transform: rotate3d(0, 0, 1, -130deg);
+    }
+
+    @media (min-width: 1300px){
+      .experience_home{
+        margin-right: -25%;
+        margin-bottom: -5%;
+
+      }
+      .work_home{
+        margin-left: -25%;
+        margin-bottom: -5%;
+
+      }
+      .lenguaje_home{
+        margin-left: -31%;
+
+      }
+      .contact_home{
+        margin-right: -31%;
+        margin-top: 5%;
+      }
+      }
+    }
+
+
+
+  @media (max-height: 870px){
+    @media (min-width: 700px) {
+      .experience_home {
+        margin-right: 1%;
+        margin-bottom: -11%;
+      }
+  
+      .work_home {
+        margin-left: 1%;
+        margin-bottom: -11%;
+      }
+
+      .lenguaje_home {
+        margin-left: 0%;
+
+      }
+
+ 
+      .contact_home {
+        margin-right: -5%;
+      }
+    
+    }
+    
+    @media (min-width: 900px){
+      .experience_home{
+        margin-right: 9%;
+    margin-bottom: -15%;
+      }
+      .work_home{
+        margin-left: 9%;
+        margin-bottom: -15%;
+      }
+      .lenguaje_home{
+        margin-left: 2%;
+      }
+      .contact_home{
+        margin-right: 0%;
+        transform: rotate3d(0, 0, 1, -124deg);
+      }
+      }
+    
+      @media (min-width: 1000px){
+        .experience_home{
+          margin-right: 4%;
+        }
+        .work_home{
+          margin-left: 4%;
+        }
+        .lenguaje_home{
+          margin-left: -4%;
+        }
+        .contact_home{
+          margin-right: -4%;
+        }
+        }
+    
+    
+      @media (min-width: 1200px){
+        .experience_home{
+          margin-right: -6%;
+        }
+        .work_home{
+          margin-left: -6%;
+        }
+        .lenguaje_home{
+          margin-left: -12%;
+        }
+        .contact_home{
+          margin-right: -12%;
+        }
+        }
+        @media (min-width: 1300px){
+          .experience_home{
+            margin-right: -15%;
+            margin-bottom: -10%;
+
+          }
+          .work_home{
+            margin-left: -15%;
+            margin-bottom: -10%;
+
+          }
+          .lenguaje_home{
+            margin-left: -22%;
+          }
+          .contact_home{
+            margin-right: -20%;
+            margin-top: 15%;
+          }
+          }
+
+
+    }
+
+@keyframes transtion-left {
+  0% {
+    background-color: #181823;
+    color: white;
+    right: 10%;
+    bottom: 35%;
+  }
+  50% {
+    background-color: rgba(79, 173, 79, 0.815);
+    color: white;
+    right: 2.5%;
+    bottom: 50%;
+    transform: rotate3d(0, 0, 1, -50deg);
+  }
+
+  100% {
+    background-color: #181823;
+    color: white;
+    right: 10%;
+    bottom: 35%;
+  }
+}
+@keyframes transtion-left-down {
+  0% {
+    background-color: #181823;
+    color: white;
+    right: 10%;
+    bottom: -35%;
+  }
+  50% {
+    background-color: rgba(79, 173, 79, 0.815);
+    color: white;
+    right: 2.5%;
+    bottom: -45%;
+    transform: rotate3d(0, 0, 1, -134deg);
+  }
+
+  100% {
+    background-color: #181823;
+    color: white;
+    right: 10%;
+    bottom: -35%;
+  }
+}
+@keyframes transtion-right {
+  0% {
+    background-color: rgba(79, 173, 79, 0.815);
+    color: white;
+    right: -10%;
+    bottom: 35%;
+  }
+  50% {
+    background-color: #181823;
+    color: white;
+    right: -5%;
+    bottom: 45%;
+    transform: rotate3d(0, 0, 1, 55deg);
+  }
+
+  100% {
+    background-color: rgba(79, 173, 79, 0.815);
+    color: white;
+    right: -10%;
+    bottom: 35%;
+  }
+}
+@keyframes transtion-right-down {
+  0% {
+    background-color: rgba(79, 173, 79, 0.815);
+    color: white;
+    right: -15%;
+    bottom: -45%;
+  }
+  50% {
+    background-color: #181823;
+    color: white;
+    right: -3%;
+    bottom: -60%;
+    transform: rotate3d(0, 0, 1, 129deg);
+  }
+  100% {
+    background-color: rgba(79, 173, 79, 0.815);
+    color: white;
+    right: -15%;
+    bottom: -45%;
   }
 }
